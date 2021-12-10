@@ -1,0 +1,21 @@
+.information{
+    max-width: 500px;
+    color: white;
+    margin-top: 70px;
+}
+ .icons{
+    
+    display: flex;
+    color: rgba(250, 228, 201,1);
+
+}
+.icons .infoIcons{
+    margin-top: -3px;
+    font-size: 18px !important;
+    font-weight: 700;
+    transition: 0s ease-in-out;
+    cursor: pointer;
+}
+.icons:hover{
+    color: rgb(255, 95, 95);
+}

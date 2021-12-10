@@ -9,7 +9,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Introduction from "./components/Introduction";
 const theme = createTheme({
   palette: {
-    mode: "dark",
+    mode: "light",
   },
 });
 //
