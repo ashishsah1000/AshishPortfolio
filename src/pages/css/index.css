@@ -12,11 +12,12 @@ body{
     height: 100vh;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }   
 .appParalax{
-    background: rgba(15,32,39,0.5);  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, rgba(44,83,100,0.5), rgba(32,58,67,0.5), rgba(15,32,39,0.5));  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, rgba(44,83,100,0.5), rgba(32,58,67,0.5), rgba(15,32,39,0.5)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgba(35,37,38,1.0);  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, rgba(65,67,69,.8), rgba(35,37,38,.8));  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, rgba(65,67,69,.8), rgba(35,37,38,.8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     height: 100vh;
     width: 100vw;

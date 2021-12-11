@@ -2,14 +2,17 @@ import * as React from "react";
 import { Box, Paper } from "@mui/material";
 import { Typography } from "@mui/material";
 import { CssBaseline } from "@mui/material";
+import Grid from "@mui/material/Grid";
 import "./css/index.css";
 import Navbar from "./components/Navbar";
+import Animate from "./components/Animate";
+import CustomCard from "./components/CustomCard";
 // import { ThemeProvider, createMuiTheme } from "@mui/system";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Introduction from "./components/Introduction";
 const theme = createTheme({
   palette: {
-    mode: "light",
+    mode: "dark",
   },
 });
 //
@@ -20,9 +23,18 @@ const IndexPage = () => {
       <CssBaseline />
       <div className="app">
         <div className="appParalax">
-          <Navbar />
           <div className="content">
-            <Introduction />
+            {/* <Navbar /> */}
+            <Grid container>
+              <Grid items md={6} xs={12}>
+                <Introduction />
+              </Grid>
+              <Grid items md={6} xs={12}>
+                {/* {add the componet of effects} */}
+                <Animate />
+                <CustomCard />
+              </Grid>
+            </Grid>
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@
     max-width: 500px;
     color: white;
     margin-top: 70px;
+    overflow: hidden;
 }
  .icons{
     
@@ -17,5 +18,5 @@
     cursor: pointer;
 }
 .icons:hover{
-    color: rgb(255, 95, 95);
+    color: #ee7e2d;
 }
