@@ -7,12 +7,13 @@ import "./css/index.css";
 import Navbar from "./components/Navbar";
 import Animate from "./components/Animate";
 import CustomCard from "./components/CustomCard";
+import CreateCards from "./components/CreateCards";
 // import { ThemeProvider, createMuiTheme } from "@mui/system";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Introduction from "./components/Introduction";
 const theme = createTheme({
   palette: {
-    mode: "dark",
+    mode: "light",
   },
 });
 //
@@ -29,16 +30,23 @@ const IndexPage = () => {
               <Grid items md={6} xs={12}>
                 <Introduction />
               </Grid>
-              <Grid items md={6} xs={12}>
+              <Grid items md={6} xs={12} >
                 {/* {add the componet of effects} */}
-                <Animate />
-                <CustomCard />
+                {/* <Animate /> */}
+                <div style={{ maxHeight: '100vh', overflow: 'auto' }}>
+                  <CreateCards />
+                </div>
+
+
+                {/* <CustomCard /> */}
+
+
               </Grid>
             </Grid>
           </div>
         </div>
       </div>
-    </ThemeProvider>
+    </ThemeProvider >
   );
 };
 

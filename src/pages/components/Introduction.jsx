@@ -4,12 +4,15 @@ import React from "react";
 import { Fade } from "@mui/material";
 import "./css/introduction.css";
 import logo from "../../images/logo.png";
+import { Button,Stack } from "@mui/material";
+
 import {
   MailOutline,
   Instagram,
   GitHub,
   LinkedIn,
   Code,
+  Cloud
 } from "@mui/icons-material";
 
 export default function Introduction() {
@@ -88,6 +91,12 @@ export default function Introduction() {
             </div>
           </div>
         </div>
+        <Box style={{marginTop:"30px"}}>
+        <Stack direction="row" alignItems="center" spacing={2}>
+          <Button size="large" startIcon={<GitHub />} variant="contained" style={{background:"#ee7e2d",color:"white"}}>Projects</Button>
+          <Button size="large" startIcon={<Cloud />} variant="contained" style={{background:"#ee7e2d",color:"white"}}>Live Apps</Button>
+          </Stack>
+        </Box>
       </Box>
     </Fade>
   );
