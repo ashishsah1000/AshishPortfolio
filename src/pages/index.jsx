@@ -11,6 +11,7 @@ import CreateCards from "./components/CreateCards";
 // import { ThemeProvider, createMuiTheme } from "@mui/system";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Introduction from "./components/Introduction";
+import Projects from "./components/Projects";
 const theme = createTheme({
   palette: {
     mode: "light",
@@ -30,11 +31,13 @@ const IndexPage = () => {
               <Grid items md={6} xs={12}>
                 <Introduction />
               </Grid>
-              <Grid items md={6} xs={12} >
+              <Grid items md={6} xs={12} s >
                 {/* {add the componet of effects} */}
                 {/* <Animate /> */}
-                <div style={{ maxHeight: '100vh', overflow: 'auto' }}>
-                  <CreateCards />
+                <div className="rightHolder" >
+                  {/* <CreateCards /> */}
+                  <Projects />
+
                 </div>
 
 

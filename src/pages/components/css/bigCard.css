@@ -1,0 +1,73 @@
+.card-box {
+    background: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    border-radius: 9px;
+    margin: 0px auto;
+    display: flex;
+    overflow: hidden;
+    margin: 10px 10px;
+    transition: 1s ease;
+    /* 
+    box-shadow: -3px 4px 4px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -3px 0px 16px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -3px 0px 16px -1px rgba(0, 0, 0, 0.75); */
+}
+
+.card-box:hover {
+    background: rgb(20, 8, 0);
+}
+
+.card-container h1 {
+    /* color: #ee7e2d;
+     */
+    color: ghostwhite;
+    font-size: 30px
+}
+
+.one {
+    width: 150px;
+    height: 100%;
+
+}
+
+.one img {
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 40px;
+    border-radius: 50%;
+}
+
+.two {
+    height: 100%;
+    padding: 20px 40px;
+
+}
+
+
+
+.details {
+    color: rgba(222, 222, 222, .8);
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn button {
+    padding: 10px 20px;
+    color: white;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
