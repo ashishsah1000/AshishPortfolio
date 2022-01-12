@@ -8,23 +8,27 @@ body {
 .app {
     /* background: url("../../images/bgimg.jpg");
      */
-    background: #000;
+    background: ghostwhite;
     margin: 0 0;
     padding: 0 0;
     width: 100vw;
     height: 100vh;
     background-size: cover;
     background-position: center;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .appParalax {
-    background: rgba(96, 108, 136, 0.5);
+    background: #41295a;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, rgba(63, 76, 107, 0.5), rgba(96, 108, 136, 0.5));
+    background: -webkit-linear-gradient(to right, #2F0743, #41295a);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, rgba(63, 76, 107, 0.5), rgba(96, 108, 136, 0.5));
+    background: linear-gradient(to right, #2F0743, #41295a);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
 
     height: 100vh;
     width: 100vw;
@@ -36,7 +40,8 @@ body {
 }
 
 .rightHolder {
-    overflow-y: scroll;
-    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+
 
 }

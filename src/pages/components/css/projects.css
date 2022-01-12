@@ -1,5 +1,8 @@
 .projects {
-    height: 90vh;
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50vh;
     overflow-x: hidden;
     overflow-y: scroll;
 
@@ -17,10 +20,12 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #ee7e2d;
+    transition: 1s ease;
+
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #a85b25;
 }

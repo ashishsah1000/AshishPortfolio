@@ -4,7 +4,7 @@ import React from "react";
 import { Fade } from "@mui/material";
 import "./css/introduction.css";
 import logo from "../../images/logo.png";
-import { Button,Stack } from "@mui/material";
+import { Button, Stack } from "@mui/material";
 
 import {
   MailOutline,
@@ -24,11 +24,12 @@ export default function Introduction() {
       <Box className="information">
         <Typography variant="h2" style={{ color: "#ee7e2d" }}>
           <img
-            src={logo}
+            src={"https://avatars.githubusercontent.com/u/24749090?v=4"}
             style={{
               position: "relative",
               top: "35px",
               height: "100px",
+              borderRadius: "10px"
             }}
           />
           <b>&nbsp;Flekenstine</b>{" "}
@@ -56,6 +57,9 @@ export default function Introduction() {
         <br />
         <Typography variant="body1">
           {" "}
+          I am a developer form Jamshedpur, Jharkhand India. I have around 3
+          years in Web Development. I am a Data Strcuture and Algorithm
+          enthusiast.
           I am a developer form Jamshedpur, Jharkhand India. I have around 3
           years in Web Development. I am a Data Strcuture and Algorithm
           enthusiast.
@@ -91,10 +95,10 @@ export default function Introduction() {
             </div>
           </div>
         </div>
-        <Box style={{marginTop:"30px"}}>
-        <Stack direction="row" alignItems="center" spacing={2}>
-          <Button size="large" startIcon={<GitHub />} variant="contained" style={{background:"#ee7e2d",color:"white"}}>Projects</Button>
-          <Button size="large" startIcon={<Cloud />} variant="contained" style={{background:"#ee7e2d",color:"white"}}>Live Apps</Button>
+        <Box style={{ marginTop: "30px" }}>
+          <Stack direction="row" alignItems="center" spacing={2}>
+            <Button size="large" startIcon={<GitHub />} variant="contained" style={{ background: "#ee7e2d", color: "white" }}>Projects</Button>
+            <Button size="large" startIcon={<Cloud />} variant="contained" style={{ background: "#ee7e2d", color: "white" }}>Live Apps</Button>
           </Stack>
         </Box>
       </Box>
