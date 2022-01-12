@@ -28,28 +28,24 @@ const IndexPage = () => {
           <div className="content">
             {/* <Navbar /> */}
             <Grid container>
-              <Grid items md={6} xs={12}>
+              <Grid items md={6} xs={12} style={{ background: "" }}>
                 <Introduction />
               </Grid>
-              <Grid items md={6} xs={12} s >
+              <Grid items md={6} xs={12}>
                 {/* {add the componet of effects} */}
                 {/* <Animate /> */}
-                <div className="rightHolder" >
+                <div className="rightHolder" style={{ overflow: "hidden" }}>
                   {/* <CreateCards /> */}
                   <Projects />
-
                 </div>
 
-
                 {/* <CustomCard /> */}
-
-
               </Grid>
             </Grid>
           </div>
         </div>
       </div>
-    </ThemeProvider >
+    </ThemeProvider>
   );
 };
 
