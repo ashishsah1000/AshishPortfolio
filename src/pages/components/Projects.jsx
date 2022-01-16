@@ -59,6 +59,7 @@ export default function Projects() {
   ];
   return (
     <div className="projects">
+     
       {data.map((x) => {
         return (
           <BigCard

@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Animate from "./components/Animate";
 import CustomCard from "./components/CustomCard";
 import CreateCards from "./components/CreateCards";
+import SideNav from "./components/SideNav";
 // import { ThemeProvider, createMuiTheme } from "@mui/system";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Introduction from "./components/Introduction";
@@ -24,11 +25,14 @@ const IndexPage = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <div className="app">
+        <SideNav />
         <div className="appParalax">
           <div className="content">
             {/* <Navbar /> */}
             <Grid container>
+
               <Grid items md={12} xs={12} style={{ height: "100vh" }}>
+
                 <Introduction />
               </Grid>
               <Grid items md={12} xs={12}>
