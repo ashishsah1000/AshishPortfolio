@@ -22,7 +22,8 @@ export default function Introduction() {
   return (
     <Fade in={true}>
       <Box className="information">
-        <Typography variant="h2" style={{ color: "#ee7e2d" }}>
+
+        <Typography variant="h2" style={{ color: "#ee7e2d", fontFamily: "'Dongle', sans-serif !important" }}>
           <img
             src={"https://avatars.githubusercontent.com/u/24749090?v=4"}
             style={{
@@ -59,10 +60,8 @@ export default function Introduction() {
           {" "}
           I am a developer form Jamshedpur, Jharkhand India. I have around 3
           years in Web Development. I am a Data Strcuture and Algorithm
-          enthusiast.
-          I am a developer form Jamshedpur, Jharkhand India. I have around 3
-          years in Web Development. I am a Data Strcuture and Algorithm
-          enthusiast.
+          enthusiast. Right now I am learning solidity programming and wishing to contribute
+          into this new technology.
         </Typography>
         <br />
         <div>

@@ -20,6 +20,9 @@
     font-weight: 400;
     transition: 0s ease-in-out;
     cursor: pointer;
+    font-family: 'Dongle', sans-serif !important;
+
+
 }
 
 .icons:hover {

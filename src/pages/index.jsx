@@ -13,10 +13,22 @@ import SideNav from "./components/SideNav";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Introduction from "./components/Introduction";
 import Projects from "./components/Projects";
-const theme = createTheme({
+const theme = createTheme(theme, {
+
+
   palette: {
     mode: "light",
   },
+  typography: {
+    body1: {
+      color: "grey",
+    },
+
+    button: {
+      textTransform: "none"
+
+    }
+  }
 });
 //
 // markup
@@ -25,11 +37,11 @@ const IndexPage = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <div className="app">
-        <SideNav />
         <div className="appParalax">
           <div className="content">
             {/* <Navbar /> */}
             <Grid container>
+              <SideNav />
 
               <Grid items md={12} xs={12} style={{ height: "100vh" }}>
 
@@ -40,8 +52,23 @@ const IndexPage = () => {
                 {/* <Animate /> */}
                 <div className="rightHolder" >
                   {/* <Typography variant="h3">Contributed Projects:</Typography> */}
-                  <CreateCards />
-                  {/* <Projects /> */}
+                  {/* <CreateCards /> */}
+                  <Grid container>
+                    <Grid items md={6} lg={6} sm={12}>
+                      <div className="pdisc">
+                        <Typography variant="h3">Let explore some projects:</Typography>
+                        <Typography variant="body1" style={{ marginTop: "30px" }}>I have contributed to few of the projects. While learning
+                          and while working we all have it here at one place and that is updated time to time. Have a look on the projects pannel.
+                        </Typography>
+                      </div>
+                    </Grid>
+                    <Grid items md={6} lg={6} sm={12}>
+                      <Projects />
+                    </Grid>
+                  </Grid>
+
+
+
                 </div>
 
                 {/* <CustomCard /> */}

@@ -1,16 +1,18 @@
 .projects {
-    width: 800px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     height: 50vh;
     overflow-x: hidden;
     overflow-y: scroll;
+
 
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
 
 /* Track */
@@ -20,7 +22,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #ee7e2d;
+    background: #851405;
     transition: 1s ease;
 
 }
